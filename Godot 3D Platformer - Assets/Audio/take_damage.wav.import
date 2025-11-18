@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://usp4itndrkvu"
+path="res://.godot/imported/take_damage.wav-c91852cfe67f34d970c5df35d65c17b0.sample"
+
+[deps]
+
+source_file="res://Godot 3D Platformer - Assets/Audio/take_damage.wav"
+dest_files=["res://.godot/imported/take_damage.wav-c91852cfe67f34d970c5df35d65c17b0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

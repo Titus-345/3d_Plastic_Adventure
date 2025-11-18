@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bdcfd1yk5f8mg"
+path="res://.godot/imported/plant.obj-b1bfdd97681ebf4e09ecc53a682745da.mesh"
+
+[deps]
+
+files=["res://.godot/imported/plant.obj-b1bfdd97681ebf4e09ecc53a682745da.mesh"]
+
+source_file="res://Godot 3D Platformer - Assets/Models/Platformer/plant.obj"
+dest_files=["res://.godot/imported/plant.obj-b1bfdd97681ebf4e09ecc53a682745da.mesh", "res://.godot/imported/plant.obj-b1bfdd97681ebf4e09ecc53a682745da.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

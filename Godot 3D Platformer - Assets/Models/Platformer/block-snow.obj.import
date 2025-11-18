@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ds5hiqjpl3lny"
+path="res://.godot/imported/block-snow.obj-d5577decb5642f8fbc071d80ce9576cb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-snow.obj-d5577decb5642f8fbc071d80ce9576cb.mesh"]
+
+source_file="res://Godot 3D Platformer - Assets/Models/Platformer/block-snow.obj"
+dest_files=["res://.godot/imported/block-snow.obj-d5577decb5642f8fbc071d80ce9576cb.mesh", "res://.godot/imported/block-snow.obj-d5577decb5642f8fbc071d80ce9576cb.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

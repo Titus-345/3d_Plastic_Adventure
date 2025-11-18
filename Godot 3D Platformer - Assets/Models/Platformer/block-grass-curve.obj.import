@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c13ss4rhgjynd"
+path="res://.godot/imported/block-grass-curve.obj-7a4653a2ef0c72aced53e3ab5d6fd86e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/block-grass-curve.obj-7a4653a2ef0c72aced53e3ab5d6fd86e.mesh"]
+
+source_file="res://Godot 3D Platformer - Assets/Models/Platformer/block-grass-curve.obj"
+dest_files=["res://.godot/imported/block-grass-curve.obj-7a4653a2ef0c72aced53e3ab5d6fd86e.mesh", "res://.godot/imported/block-grass-curve.obj-7a4653a2ef0c72aced53e3ab5d6fd86e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

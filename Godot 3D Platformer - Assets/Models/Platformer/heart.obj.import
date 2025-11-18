@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bsi2ms0sjtsok"
+path="res://.godot/imported/heart.obj-1d1fd3df63a471ad8dcaa0a29254930c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/heart.obj-1d1fd3df63a471ad8dcaa0a29254930c.mesh"]
+
+source_file="res://Godot 3D Platformer - Assets/Models/Platformer/heart.obj"
+dest_files=["res://.godot/imported/heart.obj-1d1fd3df63a471ad8dcaa0a29254930c.mesh", "res://.godot/imported/heart.obj-1d1fd3df63a471ad8dcaa0a29254930c.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
