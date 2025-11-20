@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://beimi4hfdknds"
-path.s3tc="res://.godot/imported/brick_wall_006_nor_gl_4k.png-e2c7cda98b74471a2260f0e2dbf166b1.s3tc.ctex"
+path.s3tc="res://.godot/imported/brick_wall_006_nor_gl_4k.png-721b67e707c1243ea28b67ac9dc32a53.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://TEXTURES/brick_wall_006_nor_gl_4k.png"
-dest_files=["res://.godot/imported/brick_wall_006_nor_gl_4k.png-e2c7cda98b74471a2260f0e2dbf166b1.s3tc.ctex"]
+source_file="res://Textures/brick_wall_006_nor_gl_4k.png"
+dest_files=["res://.godot/imported/brick_wall_006_nor_gl_4k.png-721b67e707c1243ea28b67ac9dc32a53.s3tc.ctex"]
 
 [params]
 

@@ -1,14 +1,13 @@
-[gd_scene load_steps=16 format=3 uid="uid://c17vdhoxoiih"]
+[gd_scene load_steps=13 format=3 uid="uid://c17vdhoxoiih"]
 
-[ext_resource type="Texture2D" uid="uid://cykhngdqldwrl" path="res://TEXTURES/brick_wall_006_diff_4k.png" id="1_jsrd8"]
+[ext_resource type="Texture2D" uid="uid://cykhngdqldwrl" path="res://Textures/brick_wall_006_diff_4k.png" id="1_jsrd8"]
 [ext_resource type="Script" uid="uid://djivuxkkq31mv" path="res://Scripts/menu.gd" id="1_q3rjx"]
-[ext_resource type="Texture2D" uid="uid://beimi4hfdknds" path="res://TEXTURES/brick_wall_006_nor_gl_4k.png" id="2_wbdvm"]
-[ext_resource type="Texture2D" uid="uid://cjid02w5c4h6w" path="res://TEXTURES/brick_wall_006_rough_4k.png" id="3_q3rjx"]
-[ext_resource type="Texture2D" uid="uid://bji715vah6d8d" path="res://TEXTURES/rusty_metal_grid_diff_4k.png" id="4_6swd7"]
-[ext_resource type="Texture2D" uid="uid://dmpnpeo0nd63k" path="res://TEXTURES/rusty_metal_grid_nor_gl_4k.png" id="5_7qvly"]
-[ext_resource type="Texture2D" uid="uid://by3c5kip80i0m" path="res://TEXTURES/rusty_metal_grid_rough_4k.png" id="6_rfqti"]
+[ext_resource type="Texture2D" uid="uid://beimi4hfdknds" path="res://Textures/brick_wall_006_nor_gl_4k.png" id="2_wbdvm"]
+[ext_resource type="Texture2D" uid="uid://cjid02w5c4h6w" path="res://Textures/brick_wall_006_rough_4k.png" id="3_q3rjx"]
+[ext_resource type="Texture2D" uid="uid://bji715vah6d8d" path="res://Textures/rusty_metal_grid_diff_4k.png" id="4_6swd7"]
+[ext_resource type="Texture2D" uid="uid://dmpnpeo0nd63k" path="res://Textures/rusty_metal_grid_nor_gl_4k.png" id="5_7qvly"]
+[ext_resource type="Texture2D" uid="uid://by3c5kip80i0m" path="res://Textures/rusty_metal_grid_rough_4k.png" id="6_rfqti"]
 [ext_resource type="Script" uid="uid://bc52k3s008gf5" path="res://Scripts/timer.gd" id="7_wbdvm"]
-[ext_resource type="Script" uid="uid://pdbm3cp80q0u" path="res://Scripts/area_3d_2.gd" id="9_6swd7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g8i7c"]
 albedo_texture = ExtResource("1_jsrd8")
@@ -31,12 +30,6 @@ normal_texture = ExtResource("5_7qvly")
 text = "MENU
 "
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_q3rjx"]
-size = Vector3(9.666992, 2.6865234, 2.524414)
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_q3rjx"]
-radius = 0.26376373
-
 [node name="Menu" type="Node3D"]
 script = ExtResource("1_q3rjx")
 
@@ -57,22 +50,9 @@ fov = 40.0
 wait_time = 10.0
 script = ExtResource("7_wbdvm")
 
-[node name="Area3D" type="Area3D" parent="."]
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Area3D"]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0.42429727)
 material_override = SubResource("StandardMaterial3D_23t3j")
 mesh = SubResource("TextMesh_8ph6h")
-skeleton = NodePath("../..")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-shape = SubResource("BoxShape3D_q3rjx")
-
-[node name="Area3D2" type="Area3D" parent="."]
-script = ExtResource("9_6swd7")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.8925867)
-shape = SubResource("SphereShape3D_q3rjx")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

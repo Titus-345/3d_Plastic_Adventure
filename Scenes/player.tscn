@@ -11,9 +11,6 @@ height = 0.69311523
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
 script = ExtResource("1_cvnsp")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.79277927, 0.60950893, 0, -0.60950893, 0.79277927, 0, 1.764144, 1.3179787)
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1.0526037, 0, 0, 0, 0.99998426, 0, 0, 0, 0.7130692, 0, 0.31335652, 0)
 shape = SubResource("CapsuleShape3D_cvnsp")
@@ -23,3 +20,6 @@ transform = Transform3D(-1, 0, -8.742277e-08, 0, 0.99999994, 0, 8.742278e-08, 0,
 mesh = ExtResource("1_v0iea")
 skeleton = NodePath("../..")
 script = ExtResource("3_6t5aa")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, -4.3308214e-15, 5.6330355e-15, 0, 0.79277927, 0.60950893, -7.1054274e-15, -0.60950893, 0.79277927, 0, 1.7641438, 1.3179786)

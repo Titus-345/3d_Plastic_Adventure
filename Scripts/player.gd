@@ -9,6 +9,9 @@ extends CharacterBody3D
 @onready var camera : Camera3D = $Camera3D
 
 func _physics_process(delta: float) -> void:
+	if Input.is_action_pressed("run"):
+		move_speed = 6
+	
 	if global_position.y < -5:
 		_game_over()
 	#apply gravity
@@ -28,7 +31,6 @@ func _physics_process(delta: float) -> void:
 	var move_dir : Vector3 = Vector3(move_input.x, 0 , move_input.y)
 	velocity.x = move_dir.x * move_speed
 	velocity.z = move_dir.z * move_speed
-	print(move_dir)
 	
 	move_and_slide()
 	
