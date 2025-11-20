@@ -1,5 +1,6 @@
 extends Area3D
 
+var value : int = 1
 @export var rotate_speed : float = 180.0
 @export var bob_height : float = .1
 @export var bob_speed : float = 3.0
@@ -26,6 +27,7 @@ func _process(delta: float) -> void:
 func _on_body_entered(body: Node3D) -> void:
 	if not body.is_in_group("Player"):
 		return
+	body.increase_score(value)
 	
 	#placeholder for score +=
 	self.queue_free()

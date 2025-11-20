@@ -10,7 +10,7 @@ extends CharacterBody3D
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("run"):
-		move_speed = 6
+		move_speed = 5
 	
 	if global_position.y < -5:
 		_game_over()
@@ -41,10 +41,9 @@ func take_damage(amount : int):
 		_game_over()
 		
 func _game_over():
+	PlayerStats.score = 0
 	get_tree().change_scene_to_file("res://Scenes/menu.tscn")
 	
-	
-	
-	
-	
-	
+func increase_score(amount: int):
+	PlayerStats.score += amount
+	print(PlayerStats.score)

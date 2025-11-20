@@ -1,19 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://bq852bhm6jkfo"]
+[gd_scene load_steps=6 format=3 uid="uid://bq852bhm6jkfo"]
 
 [ext_resource type="Script" uid="uid://dxyhur1cecdro" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="ArrayMesh" uid="uid://cf2emayu1f0im" path="res://Godot 3D Platformer - Assets/Models/Characters/character-male-d.obj" id="1_v0iea"]
 [ext_resource type="Script" uid="uid://dntngojtlxuij" path="res://Scripts/player_model.gd" id="3_6t5aa"]
+[ext_resource type="Texture2D" uid="uid://cx8xx21bfj0ef" path="res://Godot 3D Platformer - Assets/Sprites/hud_heartFull.png" id="4_vgqql"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cvnsp"]
-radius = 0.2006836
+radius = 0.22265625
 height = 0.69311523
 
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
 script = ExtResource("1_cvnsp")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1.0526037, 0, 0, 0, 0.99998426, 0, 0, 0, 0.7130692, 0, 0.31335652, 0)
-shape = SubResource("CapsuleShape3D_cvnsp")
 
 [node name="PlayerModel" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, -8.742277e-08, 0, 0.99999994, 0, 8.742278e-08, 0, -0.99999994, 0, 0, 0)
@@ -23,3 +20,37 @@ script = ExtResource("3_6t5aa")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, -4.3308214e-15, 5.6330355e-15, 0, 0.79277927, 0.60950893, -7.1054274e-15, -0.60950893, 0.79277927, 0, 1.7641438, 1.3179786)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.0526037, 0, 0, 0, 0.99998426, 0, 0, 0, 0.7130692, 0, 0.31335652, 0)
+shape = SubResource("CapsuleShape3D_cvnsp")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Heart1" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_vgqql")
+
+[node name="Heart2" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_vgqql")
+
+[node name="Heart3" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_vgqql")
+
+[node name="Heart4" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_vgqql")
+
+[node name="Heart5" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_vgqql")
+
+[node name="Heart6" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_vgqql")

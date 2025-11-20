@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cw220cbf3t2pe"]
+
+[ext_resource type="Script" uid="uid://xy822fkr66ci" path="res://Scripts/coin.gd" id="1_jgi06"]
+[ext_resource type="ArrayMesh" uid="uid://cgvhy3dhpvh2u" path="res://Godot 3D Platformer - Assets/Models/Platformer/coin-gold.obj" id="2_g537i"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_fevyy"]
+radius = 0.1937108
+
+[node name="Coin" type="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 0.99999946, 0, 0, 0, 0.99999946, 0, 0, 0)
+script = ExtResource("1_jgi06")
+
+[node name="Model" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.9999994, 0, 0, 0, 0.9999994, 0, 0, 0)
+mesh = ExtResource("2_g537i")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.0201676, -0.0023144837, 0, 0.002314691, 1.0200763, 0, 0, 0, 0.47090426, 0, 0.19942212, 0)
+shape = SubResource("SphereShape3D_fevyy")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
